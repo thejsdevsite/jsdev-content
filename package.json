@@ -1,0 +1,23 @@
+{
+  "name": "jsdev-content",
+  "version": "1.0.0",
+  "description": "JS.dev Blog Content",
+  "main": "trigger-build.js",
+  "dependencies": {},
+  "devDependencies": {
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejsdevsite/jsdev-content.git"
+  },
+  "author": "JS.dev",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/thejsdevsite/jsdev-content/issues"
+  },
+  "homepage": "https://github.com/thejsdevsite/jsdev-content#readme"
+}
