@@ -2,7 +2,6 @@ const readline = require("readline");
 const yaml = require("js-yaml");
 const fs = require("fs");
 const uniqid = require('uniqid');
-const { title } = require("process");
 
 const rl = readline.createInterface({
     input: process.stdin,
