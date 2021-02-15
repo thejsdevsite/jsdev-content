@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "JS.dev Blog Content",
   "main": "trigger-build.js",
-  "dependencies": {},
+  "dependencies": {
+    "js-yaml": "^4.0.0",
+    "uniqid": "^5.2.0"
+  },
   "devDependencies": {
     "request": "^2.88.2"
   },
