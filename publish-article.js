@@ -59,7 +59,7 @@ const displayList = (published = false) => {
       const title = file.title.substr(0, 100);
 
       const parts = [];
-      parts.push(file.uid);
+      parts.push(file.uid + " ".repeat(13-file.uid.length));
       parts.push(status + " ".repeat(9-status.length));
       parts.push(name + " ".repeat(20-name.length));
       parts.push(title + " ".repeat(100-title.length));
@@ -73,11 +73,11 @@ const displayList = (published = false) => {
 
   //|uid|published|primaryAuthor|title|
   console.log("\nArticles:");
-  console.log(`|${"-".repeat(13)}|${"-".repeat(11)}|${"-".repeat(22)}|${"-".repeat(102)}|`)
-  console.log(`| uid${" ".repeat(13-4)}| Published | Author${" ".repeat(22-7)}| Title${" ".repeat(102-6)}|`);
-  console.log(`|${"-".repeat(13)}|${"-".repeat(11)}|${"-".repeat(22)}|${"-".repeat(102)}|`)
+  console.log(`|${"-".repeat(15)}|${"-".repeat(11)}|${"-".repeat(22)}|${"-".repeat(102)}|`)
+  console.log(`| uid${" ".repeat(15-4)}| Published | Author${" ".repeat(22-7)}| Title${" ".repeat(102-6)}|`);
+  console.log(`|${"-".repeat(15)}|${"-".repeat(11)}|${"-".repeat(22)}|${"-".repeat(102)}|`)
   console.log(list.join("\n"));
-  console.log(`|${"-".repeat(13)}|${"-".repeat(11)}|${"-".repeat(22)}|${"-".repeat(102)}|`)
+  console.log(`|${"-".repeat(15)}|${"-".repeat(11)}|${"-".repeat(22)}|${"-".repeat(102)}|`)
 }
 
 const promptSelection = (published = false) => {
