@@ -99,8 +99,11 @@ const setPublishedState = (uid) => {
   }
   
   file.published = !file.published;
-  if (!file.publishedDate) file.publishedDate = new Date().toISOString();
-  file.updatedDate = new Date().toISOString();
+  if (!file.publishedDate) {
+    file.publishedDate = new Date().toISOString();
+  } else {
+    file.updatedDate = new Date().toISOString();
+  }
 
   const updatedFontmatter = `---
 ${fileToString(file)}
