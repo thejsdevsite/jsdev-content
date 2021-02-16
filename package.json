@@ -12,7 +12,10 @@
     "request": "^2.88.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "newblog": "node create-article.js",
+    "publishblog": "node publish-article.js",
+    "updateblog": "node update-article.js"
   },
   "repository": {
     "type": "git",

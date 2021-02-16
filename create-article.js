@@ -117,18 +117,18 @@ const promptQuestion = (id) => {
 
 const generateTemplate = () => {
     const template = `---
-    uid: "${uniqid.process()}"
-    title: "${data.title}"
-    date: "${new Date().toISOString()}"
-    description: "${data.description}"
-    published: false
-    posttags: ["${data.posttags.join('","')}"]
-    authors: ["${data.authors.join('","')}"]
-    primaryAuthor: "${data.primaryAuthor}"
-    hero: "./hero.jpg"
-    ---
-    
-    This is your blog post!`;
+uid: "${uniqid.process()}"
+title: "${data.title}"
+date: "${new Date().toISOString()}"
+description: "${data.description}"
+published: false
+posttags: ["${data.posttags.join('","')}"]
+authors: ["${data.authors.join('","')}"]
+primaryAuthor: "${data.primaryAuthor}"
+hero: "./hero.jpg"
+---
+
+This is your blog post!`;
 
     return template;
 }
