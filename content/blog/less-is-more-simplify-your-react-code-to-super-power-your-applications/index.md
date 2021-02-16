@@ -11,7 +11,7 @@ hero: "./hero.jpg"
 publishedDate: "2021-02-16T13:09:20.055Z"
 ---
 
-When it comes to [React][reactjs] development, there's a mantra that as developers we often forget, one that never, ever should be forgot: _"less is more"_. It's much more than an expression, it's a way of thinking, a way of solving problems, and it should be an influence on your design. [KISS][kiss] has been around for more than 60 years, and it's still as presient today as it was over half a century ago.
+When it comes to [React][reactjs] development, there's a mantra that as developers we often forget, one that never, ever should be forgot: _"less is more"_. It's much more than an expression, it's a way of thinking, a way of solving problems, and it should be an influence on your design. [KISS][kiss] has been around for more than 60 years, and it's still as prescient today as it was over half a century ago.
 
 As developers, we should avoid over engineering and over developing, doing too much when a much less is required to achieve the same result. This can be a combination of refactoring our components into smaller components, reducing complexity of our component inputs/outputs, and avoiding too much processing and complex algorithms.
 
@@ -36,7 +36,7 @@ Traditional application design following MVC principles, is to split application
 
 ![MVC overview](./mvc.jpg)
 
-Let's look at an example of simplfying a common React component structure:
+Let's look at an example of simplifying a common React component structure:
 
 ```typescript
 const globalState = someStateTool();
@@ -66,7 +66,7 @@ const mySubComponent: React.FC = () => {
 }
 ```
 
-Each component includes isolated functionality, specific to that component. Thus, they are not pure, but they are independent and interchangeable. These type of components inherently respond to various user input behaviours and data driven events. That often comes hand-in-hand with increased complexity, and increased coupling, if not directly on parent components, but on streams, event subscribales and other sources of data and events.
+Each component includes isolated functionality, specific to that component. Thus, they are not pure, but they are independent and interchangeable. These type of components inherently respond to various user input behaviours and data driven events. That often comes hand-in-hand with increased complexity, and increased coupling, if not directly on parent components, but on streams, event subscriptions and other sources of data and events.
 
 There's also a significant testing effort involved in each component, as both will need to mock various services and providers and handle behaviours and interactions.
 
