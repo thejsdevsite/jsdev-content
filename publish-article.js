@@ -131,7 +131,7 @@ const updateFontmatter = (file, contents) => {
   fs.writeFileSync(file.fname, `${contents}
 
 ${ncontents}`);
-  console.log(`File successfully ${!file.published ? "published" : "unpublished"}!`);
+  console.log(`File successfully ${file.published ? "published" : "unpublished"}!`);
   console.log("");
   rl.close();
 }
